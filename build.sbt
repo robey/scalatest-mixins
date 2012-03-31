@@ -17,5 +17,5 @@ libraryDependencies ++= Seq(
   "com.twitter" %% "util-logging" % "2.0.0" % "provided"
 )
 
-SubversionPublisher.subversionRepository := Some("https://svn.twitter.biz/maven-public"),
+SubversionPublisher.subversionRepository := Some("https://svn.twitter.biz/maven-public")
 
