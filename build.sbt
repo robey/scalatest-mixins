@@ -10,7 +10,7 @@ organization := "com.twitter"
 
 name := "scalatest-mixins"
 
-version := "1.0.0"
+version := "1.0.1-SNAPSHOT"
 
 libraryDependencies ++= Seq(
   "org.scalatest" %% "scalatest" % "1.7.1" % "provided",
