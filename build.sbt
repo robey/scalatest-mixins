@@ -18,4 +18,3 @@ libraryDependencies ++= Seq(
 )
 
 SubversionPublisher.subversionRepository := Some("https://svn.twitter.biz/maven-public")
-
