@@ -10,7 +10,7 @@ organization := "com.twitter"
 
 name := "scalatest-mixins"
 
-version := "1.0.3-SNAPSHOT"
+version := "1.0.3"
 
 resolvers <<= resolvers { r => r ++ Seq(Classpaths.typesafeResolver) } 
 
