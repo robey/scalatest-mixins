@@ -12,7 +12,7 @@ name := "scalatest-mixins"
 
 version := "1.0.4-SNAPSHOT"
 
-crossScalaVersions := Seq("2.8.1", "2.9.2")
+crossScalaVersions := Seq("2.8.1")
 
 resolvers <<= resolvers { r => r ++ Seq(Classpaths.typesafeResolver) } 
 
