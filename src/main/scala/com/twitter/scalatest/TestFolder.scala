@@ -26,7 +26,7 @@ import org.scalatest._
 trait TestFolder extends AbstractSuite { self: Suite =>
   var testFolder: File = _
 
-  private[this] def deleteFile(file: File) {
+  private def deleteFile(file: File) {
     if (!file.exists) return
     if (file.isFile) {
       file.delete()
