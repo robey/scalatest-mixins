@@ -10,7 +10,7 @@ organization := "com.twitter"
 
 name := "scalatest-mixins"
 
-version := "1.0.4-SNAPSHOT"
+version := "1.0.4"
 
 crossScalaVersions := Seq("2.8.1", "2.9.2")
 
