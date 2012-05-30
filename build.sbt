@@ -10,22 +10,17 @@ organization := "com.twitter"
 
 name := "scalatest-mixins"
 
-version := "1.0.5-SNAPSHOT"
+version := "1.1.0-SNAPSHOT"
 
-crossScalaVersions := Seq("2.8.1", "2.9.2")
+scalaVersion := "2.9.1"
 
-resolvers <<= resolvers { r => r ++ Seq(Classpaths.typesafeResolver) } 
+crossPaths := true
 
-libraryDependencies <<= (scalaVersion, libraryDependencies) { (sv, libs) =>
-  val utilLogging = if (sv == "2.8.1") {
-    "com.twitter" % "util-logging" % "4.0.1" % "provided"
-  } else {
-    "com.twitter" % "util-logging_2.9.1" % "4.0.1" % "provided"
-  }
-  libs ++ Seq(
-    "org.scalatest" %% "scalatest" % "1.7.1" % "provided"
-  ) :+ utilLogging
-}
+resolvers <<= resolvers { r => r ++ Seq(Classpaths.typesafeResolver) }
+
+libraryDependencies ++= Seq(
+  "com.twitter" % "util-logging" % "5.0.3" % "provided",
+  "org.scalatest" %% "scalatest" % "1.8" % "provided"
+)
 
 SubversionPublisher.subversionRepository := Some("https://svn.twitter.biz/maven-public")
-
